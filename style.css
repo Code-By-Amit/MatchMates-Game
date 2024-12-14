@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 20px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+.title{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h1,h3 {
+        margin:24px 0px 0px 0px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    & h3 span{
+        color: red;
+    }
+
+}
+
+.timmer{
+    color: red;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 24px 14px;
+    border-radius: 14px;
+    background-color: aliceblue;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.cadetblue {
+    background-color: cadetblue;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.chocolate {
+    background-color: chocolate;
+}
+
+.aqua {
+    background-color: aqua;
+}
+
+.deeppink {
+    background-color: deeppink;
+}
+
+div[data-shape="circle"] {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+div[data-shape='square'] {
+    width: 100px;
+    height: 100px;
+}
+
+div[data-shape="triangle"] {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+div[data-shape="oval"] {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+div[data-shape="rectangle"] {
+    width: 150px;
+    height: 100px;
+}
+
+div[data-shape="diamond"] {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    margin: 30px;
+}
+
+.result {
+    margin: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+    & h1,h2{
+        margin: 25px 0px;
+    }
+}
+.hide{
+    display: none;
+}
+
+
+.btn{
+    padding: 15px 40px;
+    outline: none;
+    border: none;
+    background-color: rgb(54, 85, 200);
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 24px;
+    margin: 25px 0px;
+    &:hover{
+        background-color: rgb(75, 107, 223);
+        transform: scale(1.02);
+    }
+}
+
+
+
+
+
+.circle {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.oval {
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    width: 150px;
+    height: 100px;
+}
+
+.diamond {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    margin: 30px;
+}
