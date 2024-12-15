@@ -10,25 +10,38 @@
 
 <body>
     <div class="title">
-        <h1>Welcome To My Game</h1>
+        <h1>Welcome To Match Mate</h1>
         <h3>Select the Same Color And Shape Element In <span>3 Seconds</span>.</h3>
         <button class="btn" onclick="start()">Start</button>
         <h2 class="timmer"></span></h2>
     </div>
+
+    <div class="scores">
+        <h2>Score Board</h2>
+        <div>
+            <h3 class="winscore"><b>Win: </b> 0</h3>
+            <h3 class="losescore"><b>Lose: </b> 0</h3>
+            <h3 class="timeoutscore"><b>Timeout: </b> 0</h3>
+        </div>
+    </div>
+
     <div class="container">
     </div>
 
     <div class="win result">
-        <h1>🥳Congratulations🥳</h1>
-        <h2>🎉You Win!🎉</h2>
+        <h1>🎉You Win!🎉</h1>
+        <h2 class="msg"></h2>
+        <!-- <h2 class="msg">🥳Congratulations🥳</h2> -->
     </div>
     <div class="lose result">
-        <h1>🫢Oops!!</h1>
-        <h2>Better Luck, Try next Time.🎯</h2>
+        <h1>🫢Oops!! You Lose.</h1>
+        <h2 class="msg"></h2>
+        <!-- <h2 class="msg">Better Luck, Try next Time.🎯</h2> -->
     </div>
     <div class="timeout result">
-        <h1>Timeout!!</h1>
-        <h2>Try next Time.🎯</h2>
+        <h1>⌚Timeout!!⌚</h1>
+        <h2 class="msg"></h2>
+        <!-- <h2 class="msg">Try next Time.🎯</h2> -->
     </div>
     <script src="script.js"></script>
 </body>

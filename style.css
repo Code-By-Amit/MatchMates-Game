@@ -1,31 +1,34 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 20px;
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
-.title{
+
+.title {
     margin: 30px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    & h1,h3 {
-        margin:24px 0px 0px 0px;
+    & h1,
+    h3 {
+        margin: 24px 0px 0px 0px;
         text-align: center;
         font-weight: bolder;
     }
 
-    & h3 span{
+    & h3 span {
         color: red;
     }
 
 }
 
-.timmer{
+.timmer {
     color: red;
     font-weight: bold;
 }
@@ -36,11 +39,19 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    margin: 20px;
-    padding: 24px 14px;
+    border: 1px solid rgb(101, 96, 96);
+    margin: 1.1rem;
+    padding: 2.5rem 2rem;
     border-radius: 14px;
-    background-color: aliceblue;
+    background-color: rgb(230, 235, 239);
+}
+
+.container div {
+    transition: transform 0.3s ease;
+
+    & :hover {
+        transform: scale(1.09);
+    }
 }
 
 .red {
@@ -80,14 +91,14 @@ body {
 }
 
 div[data-shape="circle"] {
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 
 div[data-shape='square'] {
-    width: 100px;
-    height: 100px;
+    width: 4rem;
+    height: 4rem;
 }
 
 div[data-shape="triangle"] {
@@ -99,21 +110,25 @@ div[data-shape="triangle"] {
 }
 
 div[data-shape="oval"] {
-    width: 100px;
-    height: 60px;
+    width: 4rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
 div[data-shape="rectangle"] {
-    width: 150px;
-    height: 100px;
+    width: 5.3rem;
+    height: 4rem;
 }
 
 div[data-shape="diamond"] {
-    width: 100px;
-    height: 100px;
+    width: 4rem;
+    height: 4rem;
     transform: rotate(45deg);
-    margin: 30px;
+    margin: 1rem;
+
+    &:hover {
+        transform: rotate(45deg) scale(1.09) !important;
+    }
 }
 
 .result {
@@ -123,32 +138,55 @@ div[data-shape="diamond"] {
     border-radius: 15px;
     border: 1px solid black;
 
-    & h1,h2{
+    & h1,
+    h2 {
         margin: 25px 0px;
     }
 }
-.hide{
+
+.hide {
     display: none;
 }
 
 
-.btn{
-    padding: 15px 40px;
+.btn {
+    padding: 1rem 2.5rem;
     outline: none;
     border: none;
     background-color: rgb(54, 85, 200);
     color: #fff;
     font-weight: bolder;
-    border-radius: 24px;
-    margin: 25px 0px;
-    &:hover{
+    border-radius: 1.9rem;
+    margin: 1.5rem 0;
+
+    &:hover {
         background-color: rgb(75, 107, 223);
         transform: scale(1.02);
     }
 }
 
+.scores {
+    margin: 14px 13px;
+    padding: 1.4rem;
+    border: 1px solid rgb(101, 96, 96);
+    border-radius: 9px;
 
+    & h2{
+        text-align: center;
+        margin: 7px 0px 20px 0px;
+        font-size: 1.7rem;
+    }
 
+    & div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 3rem;
+    }
+
+    & h3 {
+        margin-top: 0.8rem;
+    }
+}
 
 
 .circle {
@@ -187,3 +225,28 @@ div[data-shape="diamond"] {
     transform: rotate(45deg);
     margin: 30px;
 }
+
+ /* .result {
+    margin: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 49rem;
+}
+
+.result h1,
+.result h2 {
+    margin: 25px 0px;
+}  */
+
+@media only screen and (max-width: 633px) {
+    html{
+        font-size: 10px;
+    }
+  }
